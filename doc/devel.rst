@@ -45,16 +45,6 @@ Jenkins CI server on ``localhost:60888``.
    The test suite **removes all jobs** on the Jenkins server prior to
    running any tests.
 
-Todo
-----
-
-* Support more scm plugins.
-
-* Add Jenkins/SCM authentication tests.
-
-* Handle deleted branches that have been fully merged (this just
-  hasn't been a priority for me).
-
 .. _python-jenkins:    http://pypi.python.org/pypi/python-jenkins
 .. _`all-in-one script`:  https://github.com/gvalkov/jenkins-autojobs/blob/master/tests/bin/start-jenkins.sh
 .. _jenkins.war:       http://mirrors.jenkins-ci.org/war/latest/jenkins.war
