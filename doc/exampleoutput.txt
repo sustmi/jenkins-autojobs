@@ -1,6 +1,6 @@
 #-----------------------------------------------------------------------------
 $ cat config.yaml
-jenkins:  http://ci.server.com
+jenkins:  http://jenkins.yourdomain.com
 repo: https://github.com/mitsuhiko/flask.git
 template: flask-master
 namefmt: '{shortref}'
@@ -18,7 +18,7 @@ refs:
 #-----------------------------------------------------------
 # dryrun with config inheritance debugging
 $ jenkins-makejobs-git -nd config.yaml
-loading config from "/home/gvalkov/tmp/config.yaml"
+loading config from "/tmp/config.yaml"
 
 explicitly ignored:
  - refs/heads/0.3-maintenance
@@ -78,7 +78,7 @@ processing ref: refs/heads/new-request-dispatching
 
 #-----------------------------------------------------------
 $ jenkins-makejobs-git config.yaml
-loading config from "/home/gvalkov/tmp/config.yaml"
+loading config from "/tmp/config.yaml"
 
 explicitly ignored:
  - refs/heads/0.3-maintenance
@@ -143,7 +143,7 @@ processing ref: refs/heads/new-request-dispatching
 #-----------------------------------------------------------
 # subsequent runs
 $ jenkins-makejobs-git config.yaml
-loading config from "/tmp/test.yaml"
+loading config from "/tmp/config.yaml"
 
 explicitly ignored:
  - refs/heads/0.3-maintenance

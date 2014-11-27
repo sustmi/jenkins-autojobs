@@ -3,10 +3,7 @@
 import sys, os, re
 import alabaster
 
-# Check if readthedocs is building us
-on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
-
-# read version from setup.py
+# Read version from setup.py
 for line in open('../jenkins_autojobs/__init__.py'):
     m = re.search("version.*=.*'(.*)'", line)
     if m:
@@ -77,7 +74,7 @@ exclude_patterns = ['_build']
 #show_authors = False
 
 # The name of the Pygments (syntax highlighting) style to use.
-pygments_style = 'sphinx'
+# pygments_style = 'tango'
 
 # A list of ignored prefixes for module index sorting.
 #modindex_common_prefix = []
@@ -93,9 +90,9 @@ html_theme = 'alabaster'
 # html_sidebars = {
 #    '**': ['navigation.html', 'searchbox.html']
 # }
-#html_sidebars = {
-#'**': []
-#}
+html_sidebars = {
+'**': []
+}
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
