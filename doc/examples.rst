@@ -9,6 +9,8 @@ Git
 
 :download:`Download git-config.yaml <examples/git-config.yaml>`
 
+.. _hgyamlconfig:
+
 Mercurial
 ---------
 
@@ -17,6 +19,8 @@ Mercurial
 .. :linenos:
 
 :download:`Download hg-config.yaml <examples/hg-config.yaml>`
+
+.. _svnyamlconfig:
 
 Subversion
 ----------

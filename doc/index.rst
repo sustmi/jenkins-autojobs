@@ -5,8 +5,8 @@
 Introduction
 ============
 
-Jenkins-autojobs is a set of scripts for automatically creating
-Jenkins jobs from template jobs and the branches in an SCM repository.
+Jenkins-autojobs is a set of scripts that automatically create Jenkins
+jobs from template jobs and the branches in an SCM repository.
 Jenkins-autojobs supports Git_, Mercurial_ and Subversion_.
 
 A routine run goes through the following steps:
@@ -33,7 +33,12 @@ Autojobs can also;
   recent state.
 
 Please refer to the :doc:`tutorial <tutorial>` and the :doc:`example
-output <exampleoutput>` to get started.
+output <exampleoutput>` to get started. You may also have a look at
+the annotated :ref:`git <gityamlconfig>`, :ref:`svn <svnyamlconfig>`
+and :ref:`hg <hgyamlconfig>` config files.
+
+**Notice**: The documentation is in the process of being completely
+rewritten. Things may seem incomplete and out of place.
 
 
 Installing
